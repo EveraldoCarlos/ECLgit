@@ -154,6 +154,7 @@ outline: none;
   opacity: .8;
   border-radius: 1rem;
   font-weight: 600;
+  color: #333;
 }
 .btn:hover {
   opacity: 1;
