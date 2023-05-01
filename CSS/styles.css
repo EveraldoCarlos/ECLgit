@@ -21,6 +21,7 @@ header {
     background-image: url('../IMG/gears-3385696_640.jpg');
   background-size: cover;
   background-color: black;
+  padding-bottom: 200px;
   }
   
   ol {
@@ -39,16 +40,23 @@ header {
   nav ul {
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 8rem;
     
   }
   
  
   nav a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     display: flex;
-    
+    font-size: larger;
+    gap: 8rem;
+    border: 3px solid gray;
+    font-size: larger;
+  font-weight: 800;
+  margin: .5rem;
+  border-radius: .5rem;
+  background-color: bisque;
   }
   .container{
     display: flex;
@@ -58,22 +66,37 @@ header {
   gap: 5rem;
   background-color: #333;
   }
-
+  .secondcontainer{
+display: none;
+font-size: larger;
+}
+  
+.secondcontainer p{
+  color: #fff;
+}
+.projectcontainer{
+  display: none;
+  gap: 5rem;
+}
+.projectcontainer p{
+  color: #fff;
+}
   #item {
     background-color: aquamarine;
     border: 1px solid #333;
     box-shadow: rgba(0, 0, 0, 0.34) 4px 6px 8px;
+    margin-left: 10px ;
     margin: 1.5rem 0;
     padding: 1rem;
-    width: 600px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
   #item img {
-    height: 400px;
+    height: 300px;
     object-fit: cover;
-    width: 100%;
+    width: 70%;
     margin-bottom: 1rem;
   }
    #sol{
@@ -109,6 +132,7 @@ p {
   background-color: aquamarine;
   margin: 1.5rem 0;
   font-size: larger;
+  width: 600px;
 }
  a{
   color: black;
@@ -175,7 +199,7 @@ background-color: aquamarine;
  footer {
   color: #fff;
 }
-footer nav {
+footer a{
   color: #fff;
 }
 
