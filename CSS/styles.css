@@ -1,207 +1,91 @@
+/* || General styles */
+
 * {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  display: grid;
+  margin: auto;
+  padding: auto;
+  text-align: justify;
 }
-header {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  header h1 {
-    margin: 0;
-  }
 
-  body{
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../IMG/gears-3385696_640.jpg');
-  background-size: cover;
-  background-color: black;
-  padding-bottom: 200px;
-  }
-  
-  ol {
-    font-family: fantasy;
-    color: rgb(12, 22, 1);
-    border: 4px solid rgb(106, 185, 216);
-    padding: 2rem;
-    background-color: rgba(204, 144, 120, 0.932);
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    gap: 8rem;
-    
-  }
-  
- 
-  nav a {
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    font-size: larger;
-    gap: 8rem;
-    border: 3px solid gray;
-    font-size: larger;
-  font-weight: 800;
-  margin: .5rem;
-  border-radius: .5rem;
-  background-color: bisque;
-  }
-  .container{
-    display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  margin: 5rem 0;
-  gap: 5rem;
-  background-color: #333;
-  }
-  .secondcontainer{
-display: none;
-font-size: larger;
-}
-  
-.secondcontainer p{
-  color: #fff;
-}
-.projectcontainer{
-  display: none;
-  gap: 5rem;
-}
-.projectcontainer p{
-  color: #fff;
-}
-  #item {
-    background-color: aquamarine;
-    border: 1px solid #333;
-    box-shadow: rgba(0, 0, 0, 0.34) 4px 6px 8px;
-    margin-left: 10px ;
-    margin: 1.5rem 0;
-    padding: 1rem;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  #item img {
-    height: 300px;
-    object-fit: cover;
-    width: 70%;
-    margin-bottom: 1rem;
-  }
-   #sol{
-    font-size: x-large;
-   }
-   #seg{
-    font-size: x-large;
-   }
+/* || Typography */
 
-aside ul {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
- list-style-position: inside;
-}
-aside p{
-  border: 2px solid #fff;
+h1,
+h2,
+h3,
+h4 {
+  margin: auto;
   text-align: center;
-  color: #fff;
-  background-color: #333;
-  font-size: larger;
-  margin: 10px;
+  font-family: "Times New Roman", Times, sans-serif;
 }
-p {
+
+a {
   color: black;
+  text-decoration: none;
 }
-.itens {
-  color: black;
-  border: 2px solid gray;
-  gap: 8rem;
-  padding: 3rem;
-  background-color: aquamarine;
-  margin: 1.5rem 0;
-  font-size: larger;
-  width: 600px;
+
+/* … */
+
+/* || Header and Main Navigation */
+
+body {
+  padding: 0 5vh;
+  align-items: center;
 }
- a{
-  color: black;
+
+#pages {
+  display: inline-block;
+  padding: 10px 50px;
 }
-.solic{
-  color: black;
+
+#pages li{
+  display: inline-block;
+  background-color: rgb(141, 145, 141);
+  color: white;
 }
- h2{
-font-size: larger;
-color: #fff;
-background-color: #333;
-gap: 5rem;
-margin: 10px 0;
-padding: 3px 0;
-border: 2px solid #fff;
-text-align: center;
+
+#pages li:hover {
+  background: #dddddd;
+  transition: ease-in;
+  transition-delay: 20ms;
+  animation-delay: 30ms;
+}
+
+#pages li a{
+  color: white;
+}
+
+#section-info {
+  display: grid;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.itens > li {
+  padding: auto;
+}
+
+#register-form {
+  display: grid;
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: .8em;
+  display: inline-block;
+  padding: 10px 20px;
 }
-.form-group label {
-  color: #fff;
-  margin-bottom: 3em;
+
+#btn-submit {
+  background: #777171;
+  padding: 10px;
+  color: #ffffff;
   font-weight: bold;
-}
-.form-group input, 
-.form-group select {
-padding: 6px 8px;
-border-radius: 5px;
-border: none;
-outline: none;
-}
-.btn {
-  background-color: aqua;
-  text-transform: uppercase;
-  width: 100%;
-  border: 2px solid #fff;
-  padding: 12px;
-  cursor: pointer;
-  opacity: .8;
-  border-radius: 1rem;
-  font-weight: 600;
-  color: #333;
-}
-.btn:hover {
-  opacity: 1;
-}
-body {
-  padding-bottom: 300px;
-}
-#subscription-form p{
-  color: #fff;
-}
-h3 {
-  list-style-position: inside;
-color: #333;
-border: none;
-text-align: center;
-background-color: aquamarine;
-}
- footer {
-  color: #fff;
-}
-footer a{
-  color: #fff;
+  font-size: large;
+  border: 1px black groove;
 }
 
+/* … */
 
-
+footer {
+  padding: 30px 0;
+  display: grid;
+  text-align: center;
+}
